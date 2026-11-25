@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# OS and Office temp files
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*

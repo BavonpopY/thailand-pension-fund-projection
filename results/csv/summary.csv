@@ -1,0 +1,43 @@
+,item,value
+0,Scenario,Baseline
+1,Scope,Old-Age Benefit Branch only (pension + lump-sum grant)
+2,Base year,2024
+3,Final projection year,2124
+4,,
+5,--- Scheme design ---,
+6,Normal retirement age (base year),55
+7,Vesting period (months),180
+8,Accrual: base rate,20.0%
+9,Accrual: increment per extra year,1.50%
+10,Reference salary window (years),5
+11,Reference salary revalued,False
+12,Pension indexation,none
+13,Insurable earnings floor (THB/month),1650.0
+14,Insurable earnings ceiling (THB/month),15000.0
+15,Ceiling indexation,none
+16,Old-age contribution rate,6.35%
+17,Collection rate,0.98
+18,Admin expense rate (% insurable earnings),0.0047
+19,Grant on pre-retirement death,True
+20,Pensioner death guarantee (months),60
+21,,
+22,--- Ultimate economic assumptions ---,
+23,Inflation,2.00%
+24,Real wage growth,1.25%
+25,Real GDP growth,1.50%
+26,Nominal investment return,4.04%
+27,Ultimate TFR,1.23
+28,,
+29,--- Results ---,
+30,Initial reserve (THB mn),1949071.0
+31,"PAYG cost rate, year 25",18.43%
+32,"PAYG cost rate, final year",51.02%
+33,General Average Premium,11.81%
+34,Rate for reserve ratio 3,11.84%
+35,Rate for balance ratio 1,12.06%
+36,Year of fund depletion,2062
+37,"Active members, final year","3,255,740"
+38,"Old-age pensioners, final year","4,714,137"
+39,"Vested share of actives, final year",22.3%
+40,"Dependency ratio, final year",1.608
+41,"System replacement ratio, final year",29.8%

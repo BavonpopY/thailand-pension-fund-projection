@@ -1,0 +1,34 @@
+,config_path,parameter_description,required_format_shape,unit,thai_source_agency,status
+0,demography.base_population,National population at the valuation date,"ndarray (2, 101) [sex, age 0-100]",persons,NESDC / NSO,SUPPLIED
+1,demography.mortality_qx,"General-population mortality q(x,t)","ndarray (2, 101, T)",probability,NESDC / UN WPP / OIC TMO,SUPPLIED
+2,demography.fertility_asfr_base,"Age-specific fertility rates, base year","ndarray (101,)",births per woman,NSO vital registration,SUPPLIED
+3,demography.tfr_path,Total fertility rate by year,"ndarray (T,)",children per woman,NESDC projection,SUPPLIED
+4,demography.net_migration_total,Net migration by year,"ndarray (T,)",persons/year,NSO / Department of Employment,SUPPLIED
+5,demography.migration_age_profile,Sex-age distribution of net migration,"ndarray (2, 101), sums to 1",proportion,NSO / DOE,SUPPLIED
+6,labour.lfpr,Labour force participation rate,"ndarray (2, 101, T)",proportion,NSO Labour Force Survey,SUPPLIED
+7,labour.unemployment_rate,Unemployment rate,"ndarray (2, 101, T)",proportion,NSO Labour Force Survey,SUPPLIED
+8,labour.inflation,CPI inflation,"ndarray (T,)",proportion/year,MOC / BOT / IMF WEO,SUPPLIED
+9,labour.real_wage_growth,Real increase in average insurable earnings,"ndarray (T,)",proportion/year,NESDC productivity / SSO wage data,SUPPLIED
+10,labour.real_gdp_growth,Real GDP growth,"ndarray (T,)",proportion/year,NESDC / IMF WEO,SUPPLIED
+11,labour.base_gdp,Nominal GDP in the base year,float,THB,NESDC,SUPPLIED
+12,labour.real_investment_return,Real return on scheme assets,"ndarray (T,)",proportion/year,SSO Investment Bureau / BOT yield curve,SUPPLIED
+13,scheme.min_insurable_earnings_monthly,Statutory floor on the contribution base,float,THB/month,SSO Act / ministerial regulation,SUPPLIED
+14,scheme.max_insurable_earnings_monthly,Statutory ceiling on the contribution base,float,THB/month,SSO Act / ministerial regulation,SUPPLIED
+15,scheme.contribution_rate_total,Contribution rate allocated to the OLD-AGE branch (net of child allowance),"float or ndarray (T,)",proportion,SSO Act / ILO branch allocation,SUPPLIED
+16,scheme.collection_rate,Contribution collection / compliance rate,"float or ndarray (T,)",proportion,SSO financial statements,SUPPLIED
+17,scheme.nra_path,Normal retirement age by year (OPTIONAL -- phased reform only),"ndarray (T,) int",age,SSO Act / reform proposal,OPTIONAL (unset)
+18,scheme.admin_expense_rate,Administrative expenditure,"float or ndarray (T,)",% of insurable earnings,SSO financial statements,SUPPLIED
+19,membership.active_base,"Active members by sex, income band, age, credit","ndarray (2, 3, 55, 51)",persons,SSO member register,SUPPLIED
+20,membership.inactive_base,"Inactive members by sex, income, age, credit","ndarray (2, 3, 55, 51)",persons,SSO member register,SUPPLIED
+21,membership.old_age_pensioners_base,Old-age pensioners at the valuation date,"ndarray (2, 101)",persons,SSO benefit register,SUPPLIED
+22,membership.old_age_pension_base_monthly,Average old-age pension in payment,"ndarray (2, 101)",THB/month,SSO benefit register,SUPPLIED
+23,membership.coverage_rate,Insured / employed coverage rate,"ndarray (2, 55, T)",proportion,SSO insured count / NSO LFS employed,SUPPLIED
+24,membership.density,Contribution density (contributors / active),"ndarray (2, 55, T)",proportion,SSO contribution records,SUPPLIED
+25,membership.leaving_rate,Probability of becoming inactive,"ndarray (2, 55, T)",probability,SSO member-register experience,SUPPLIED
+26,membership.retirement_rate,Share of exits claiming an old-age benefit,"ndarray (2, 55, T)",proportion,SSO award experience,SUPPLIED
+27,membership.reentry_rate,Re-entry probability from the inactive pool,"ndarray (2, 55, T)",probability,SSO member-register experience,SUPPLIED
+28,membership.insured_mortality_qx,Mortality of the insured population,"ndarray (2, 101, T)",probability,SSO mortality experience / OIC TMO,SUPPLIED
+29,membership.new_entrant_share,New entrants as a share of required inflow,"ndarray (55, T)",proportion,SSO registration statistics,SUPPLIED
+30,membership.salary_scale_monthly,Average insurable earnings by band and age,"ndarray (2, 3, 55)",THB/month,SSO declared wages,SUPPLIED
+31,membership.income_level_shares,Share of members in each income band,"ndarray (3,)",proportion,SSO earnings distribution,SUPPLIED
+32,finance.initial_reserve,Old-age branch reserve at the valuation date,float,THB,SSO audited financial statements,SUPPLIED
